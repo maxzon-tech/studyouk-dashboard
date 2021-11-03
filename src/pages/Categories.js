@@ -5,13 +5,13 @@ import { Container, Stack, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
 import {
-  ProductSort,
-  ProductList,
-  ProductCartWidget,
-  ProductFilterSidebar
-} from '../components/_dashboard/products';
+  CategorySort,
+  CategoryList,
+  CategoryCartWidget,
+  CategoryFilterSidebar
+} from '../components/_dashboard/category';
 //
-import PRODUCTS from '../_mocks_/products';
+import CATEGORIES from '../_mocks_/categories';
 
 // ----------------------------------------------------------------------
 
@@ -47,13 +47,13 @@ export default function EcommerceShop() {
   };
 
   return (
-    <Page title="Dashboard: Products | Minimal-UI">
+    <Page title="Dashboard: Categories | Minimal-UI">
       <Container>
         <Typography variant="h4" sx={{ mb: 5 }}>
-          Products
+          Category
         </Typography>
 
-        <Stack
+        {/* <Stack
           direction="row"
           flexWrap="wrap-reverse"
           alignItems="center"
@@ -61,19 +61,19 @@ export default function EcommerceShop() {
           sx={{ mb: 5 }}
         >
           <Stack direction="row" spacing={1} flexShrink={0} sx={{ my: 1 }}>
-            <ProductFilterSidebar
+            <CategoryFilterSidebar
               formik={formik}
               isOpenFilter={openFilter}
               onResetFilter={handleResetFilter}
               onOpenFilter={handleOpenFilter}
               onCloseFilter={handleCloseFilter}
             />
-            <ProductSort />
+            <CategorySort />
           </Stack>
-        </Stack>
+        </Stack> */}
 
-        <ProductList products={PRODUCTS} />
-        <ProductCartWidget />
+        <CategoryList categories={CATEGORIES} />
+        {/* <CategoryCartWidget /> */}
       </Container>
     </Page>
   );

@@ -18,35 +18,72 @@ const sidebarConfig = [
     icon: getIcon(pieChart2Fill)
   },
   {
-    title: 'user',
-    path: '/dashboard/user',
-    icon: getIcon(peopleFill)
-  },
-  {
-    title: 'product',
-    path: '/dashboard/products',
+    title: 'categories',
+    path: '/dashboard/category',
     icon: getIcon(shoppingBagFill)
   },
   {
-    title: 'blog',
-    path: '/dashboard/blog',
+    title: 'courses',
+    path: '/dashboard/course',
     icon: getIcon(fileTextFill)
   },
+
   {
-    title: 'login',
-    path: '/login',
-    icon: getIcon(lockFill)
+    title: 'students',
+    path: '/dashboard/student',
+    icon: getIcon(peopleFill)
   },
   {
-    title: 'register',
-    path: '/register',
+    title: 'enrolment',
+    path: '/dashboard/enrol',
     icon: getIcon(personAddFill)
   },
   {
-    title: 'Not found',
-    path: '/404',
+    title: 'report',
+    path: '/dashboard/report',
+    icon: getIcon(pieChart2Fill)
+  },
+  {
+    title: 'message',
+    path: '/dashboard/message',
+    icon: getIcon(pieChart2Fill)
+  },
+  {
+    title: 'manage profile',
+    path: '/dashboard/manage_profile',
     icon: getIcon(alertTriangleFill)
   }
+
+  // {
+  //   title: 'user',
+  //   path: '/dashboard/user',
+  //   icon: getIcon(peopleFill)
+  // },
+  // {
+  //   title: 'category',
+  //   path: '/dashboard/categories',
+  //   icon: getIcon(shoppingBagFill)
+  // },
+  // {
+  //   title: 'blog',
+  //   path: '/dashboard/blog',
+  //   icon: getIcon(fileTextFill)
+  // },
+  // {
+  //   title: 'login',
+  //   path: '/login',
+  //   icon: getIcon(lockFill)
+  // },
+  // {
+  //   title: 'register',
+  //   path: '/register',
+  //   icon: getIcon(personAddFill)
+  // },
+  // {
+  //   title: 'Not found',
+  //   path: '/404',
+  //   icon: getIcon(alertTriangleFill)
+  // }
 ];
 
 export default sidebarConfig;

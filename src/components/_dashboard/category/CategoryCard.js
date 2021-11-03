@@ -11,7 +11,7 @@ import ColorPreview from '../../ColorPreview';
 
 // ----------------------------------------------------------------------
 
-const ProductImgStyle = styled('img')({
+const CategoryImgStyle = styled('img')({
   top: 0,
   width: '100%',
   height: '100%',
@@ -21,12 +21,12 @@ const ProductImgStyle = styled('img')({
 
 // ----------------------------------------------------------------------
 
-ShopProductCard.propTypes = {
-  product: PropTypes.object
+ShopCategoryCard.propTypes = {
+  category: PropTypes.object
 };
 
-export default function ShopProductCard({ product }) {
-  const { name, cover, price, colors, status, priceSale } = product;
+export default function ShopCategoryCard({ category }) {
+  const { name, cover, price, status, priceSale } = category;
 
   return (
     <Card>
@@ -46,7 +46,7 @@ export default function ShopProductCard({ product }) {
             {status}
           </Label>
         )}
-        <ProductImgStyle alt={name} src={cover} />
+        <CategoryImgStyle alt={name} src={cover} />
       </Box>
 
       <Stack spacing={2} sx={{ p: 3 }}>
@@ -57,7 +57,7 @@ export default function ShopProductCard({ product }) {
         </Link>
 
         <Stack direction="row" alignItems="center" justifyContent="space-between">
-          <ColorPreview colors={colors} />
+          {/* <ColorPreview colors={colors} /> */}
           <Typography variant="subtitle1">
             <Typography
               component="span"
